@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![ROS2-Humble](https://img.shields.io/badge/ROS2-Humble-blue)
+
+
 # TurtleBot3 Simple Navigator
 
 A ROS2 package implementing a simple autonomous navigation behavior for TurtleBot3 robots. This project demonstrates basic obstacle avoidance and wandering behaviors using laser scan data.
@@ -54,14 +58,14 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
 2. Run the simple navigator:
 ```bash
-ros2 run turtlebot3_simple_navigator simple_navigator
+ros2 launch turtlebot3_simple_navigator simple_navigator.launch.py
 ```
 
 ### With Custom Parameters
 
 You can override default parameters using the provided configuration file:
 ```bash
-ros2 run turtlebot3_simple_navigator simple_navigator --ros-args --params-file src/turtlebot3_simple_navigator/config/params.yaml
+ros2 run turtlebot3_simple_navigator simple_navigator --ros-args --params-file install/turtlebot3_simple_navigator/share/turtlebot3_simple_navigator/config/params.yaml
 ```
 
 Or set individual parameters:
@@ -115,6 +119,8 @@ The implementation uses an omnidirectional avoidance algorithm that:
 ### Published
 - `/cmd_vel` (geometry_msgs/Twist): Velocity commands for robot movement
 
-## License
+## Useful Links
 
-This project is licensed under the MIT License.
+- [ROS 2 Documentation](https://docs.ros.org/en/humble/)  
+- [TurtleBot3 Documentation](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)  
+- [Gazebo Documentation](https://gazebosim.org/docs)  
