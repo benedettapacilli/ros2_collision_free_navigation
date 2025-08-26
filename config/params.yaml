@@ -1,0 +1,15 @@
+turtlebot3_local_planner:
+  ros__parameters:
+    forward_speed: 0.22
+    turn_speed: 1.2
+    safety_distance: 0.20
+    front_angle_range: 0.6
+
+    # wandering
+    wander_std: 0.08
+    tumble_mean_interval: 6.0
+    tumble_max_angle: 0.523599
+
+    # global avoidance
+    influence_distance: 0.4
+    avoid_gain: 1.0
